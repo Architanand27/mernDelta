@@ -1,0 +1,20 @@
+.box {
+    height: 200px;
+    width: 500px;
+    background-color: gold;
+    animation-name: fontAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes fontAnimation{
+    form {
+        font-size: 20px;
+    }
+    to {
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,20 @@
+div {
+    display: inline-block;
+    margin: 20px;
+    height: 320px;
+    /* border: 2px solid black; */
+    box-shadow: 1px 1px 5px black;
+    transition: .5s;
+    border-radius: 5%;
+    
+}
+div:hover {
+    box-shadow: 3px 3px 15px black;
+}
+p,h3 {
+    text-align: center;
+}
+img {
+    border-radius: 5% 5% 0 0;
+    width: 100%;
+}

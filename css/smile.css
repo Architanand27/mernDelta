@@ -1,0 +1,50 @@
+body{
+    /* background-color: gray; */
+}
+#outer{
+    /* background-color: aliceblue; */
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+}
+#circle{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    background-color: orange;
+    /* padding: 10px 10px 10px 10px; */
+    border-radius: 100%;
+    
+    
+    height: 180px;
+    width: 180px;
+}
+#eye1{
+    position: relative;
+    top: 48px;
+    left: 45px;
+    background-color: black;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+
+}
+#eye2{
+    position: relative;
+    top: 30px;
+    left: 120px;
+    background-color: black;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    
+}
+#lip{
+    position: relative;
+    top: 80px;
+    left: 45px;
+    height: 25px;
+    width: 100px;
+    background-color: maroon;
+    border-radius: 0 0 50px 50px;
+}
