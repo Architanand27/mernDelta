@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+</head>
+<body>
+    <h1><%= username %></h1>
+    <button>Follow</button>
+    <button>Message</button>
+
+    <h3>Accounts that follow you</h3>
+    <!-- <% for (let i=0; i<followers.length; i++){ %>
+        <p><%= followers[i] %></p>
+    <% } %> -->
+    <!-- using for of loop -->
+     <ul>
+        <% for(names of followers){ %>
+            <li><%= names %></li>
+        <% } %>
+     </ul>
+</body>
+</html>
