@@ -1,0 +1,23 @@
+h1{
+    color: maroon;
+}
+.main{
+    display: flex;
+}
+.post{
+    background-color: antiquewhite;
+    border: 2px solid black;
+    margin: 2px;
+    padding: 2px;
+    height: 120px;
+    width: 300px;
+    border-radius: 15px;
+    
+    
+}
+button{
+    background-color: yellowgreen;
+}
+.user{
+    font-style: italic;
+}

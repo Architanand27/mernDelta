@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Edit <%= post.username %>'s Post
+    </title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h2>Here your post in detail</h2>
+    <p>id:- <%= post.id %></p>
+    <h3 class="user">@<%= post.username %></h3>
+    <!-- Using a pakckage"method-override" to convert the post request into patch -->
+    <form method="POST" action="/posts/<%= post.id %>?_method=PATCH">
+        <textarea name="content" id=""><%= post.content %></textarea>
+        <button>submit</button>
+    </form>
+</body>
+</html>
