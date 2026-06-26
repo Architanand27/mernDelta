@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color: white;
+    }
+</style>
+<body>
+    <h2>App users are..</h2>
+    <form action="/user/adduser" method="get">
+        <button>Add users</button>
+    </form>
+    <br>
+    <form action="/user/deleteuser" method="get">
+        <button>Delete !</button>
+    </form>
+    <br>
+
+    
+    <table border="">
+        <thead>
+            <th>s.no</th>
+            <th>ID</th>
+            <th>USERNAME</th>
+            <th>EMAIL</th>
+            <th>EDIT</th>
+            
+        </thead>
+        <tbody>
+            <% for( let i = 0; i < result.length; i++ ) { %>
+                <tr>
+                    <td><%= i+1 %></td>
+                    <td><%= result[i].id %></td>
+                    <td><%= result[i].username %></td>
+                    <td><%= result[i].email %></td>
+                    <td>
+                        <form method="get" action="/user/<%= result[i].id %>/edit">
+                            <button>Edit</button>
+                        </form>
+                    </td>
+                    
+                </tr>
+            <% } %>
+            
+        </tbody>
+            
+        </table>
+        
+
+</body>
+</html>
+

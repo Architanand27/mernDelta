@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete user</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Delete user Permanently</h2>
+    <form action="/user/delete?_method=DELETE" method="post">
+        username: 
+        <input type="text" name="username", placeholder="Enter username here"><br><br>
+        password: 
+        <input type="password" name="password" placeholder="Enter password here"><br><br>
+        <button>DELETE</button>
+        
+    </form>
+    
+</body>
+</html>
