@@ -1,0 +1,50 @@
+body {
+  background-color: black;
+  color: white;
+}
+.chat,.newChat, .editChat {
+  border: 3px solid maroon;
+  width: 300px;
+  /* height: 200px; */
+  margin: 4px;
+  padding: 10px;
+  background-color: rgb(105, 131, 63);
+  color: black;
+  display: inline-block;
+  border-radius: 16px;
+}
+
+.dt {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7em;
+}
+
+.msg {
+  background-color: rgb(249, 210, 163);
+  padding: 5px 5px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* for new.ejs */
+
+input,textarea {
+  border-radius: 15px;
+  background-color: rgb(249, 210, 163);
+  margin: 1px;
+  padding: 4px;
+  width: 250px;
+  height: 40px;
+}
+.btn{
+  margin-top: 20px;
+  background-color: rgb(192, 80, 80);
+  border-radius: 16px;
+  margin-right: 2px;
+}
+.btns{
+  display: flex;
+  justify-content:space-around;
+}
